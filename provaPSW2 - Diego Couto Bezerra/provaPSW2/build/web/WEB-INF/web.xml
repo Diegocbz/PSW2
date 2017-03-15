@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>incluirEstrela</servlet-name>
+        <servlet-class>incluirEstrela</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>consultaEstrela</servlet-name>
+        <servlet-class>consultaEstrela</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>carregaEstrela</servlet-name>
+        <servlet-class>carregaEstrela</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>incluirEstrela</servlet-name>
+        <url-pattern>/incluirEstrela</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consultaEstrela</servlet-name>
+        <url-pattern>/consultaEstrela</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>carregaEstrela</servlet-name>
+        <url-pattern>/carregaEstrela</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
